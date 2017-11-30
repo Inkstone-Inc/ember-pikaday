@@ -49,6 +49,7 @@
     "ember-cli-babel": "^6.9.0",
     "ember-cli-htmlbars": "^2.0.3",
     "ember-cli-node-assets": "^0.2.2",
+    "fastboot-transform": "^0.1.1",
     "pikaday-time": "^1.6.1"
   },
   "ember-addon": {

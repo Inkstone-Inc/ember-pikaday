@@ -7,8 +7,6 @@ import { run } from '@ember/runloop';
 import { getProperties, computed, get, set } from '@ember/object';
 import moment from 'moment';
 
-// const assign = assign || merge;
-
 export default Mixin.create({
 
   _options: computed('options', 'i18n', {
@@ -56,6 +54,8 @@ export default Mixin.create({
       yearRange: this.determineYearRange(),
       minDate: get(this, 'minDate') || null,
       maxDate: get(this, 'maxDate') || null,
+      defaultDate: get(this, 'defaultDate') || null,
+      setDefaultDate: !!get(this, 'defaultDate'),
       theme: get(this, 'theme') || null,
 
       // Options for the time picker
@@ -105,6 +105,10 @@ export default Mixin.create({
 
   setupPikaday() {
     let pikaday = new Pikaday(get(this, '_options'));
+
+    if (get(this, 'defaultDate')) {
+      set(this, 'value', get(this, 'defaultDate'));
+    }
 
     set(this, 'pikaday', pikaday);
     this.setPikadayDate();

@@ -1,3 +1,7 @@
+## 0.0.7
+- Merge in updates from [@edgycircle/ember-pikaday@2.2.3](https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2)
+- Fix an issue with [pikaday-time](https://github.com/owenmead/Pikaday) vendor files not being imported into a parent app
+
 ## 0.0.6
 - Update to the new module syntax as per [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-javascript-module-api.md) of Ember 2.16
 - Remove `ember-cli-shims`
