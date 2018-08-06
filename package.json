@@ -1,6 +1,6 @@
 {
   "name": "ember-pikaday-time",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A tested date and time picker component for Ember CLI projects including test helpers for your own acceptance tests.",
   "directories": {
     "test": "tests"
