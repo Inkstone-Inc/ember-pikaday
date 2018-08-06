@@ -1,5 +1,8 @@
+## 0.0.8
+- Merge in updates up through [@edgycircle/ember-pikaday@e367b56a242fd1cafb1940788bcac2308b31fa53](https://github.com/edgycircle/ember-pikaday/tree/e367b56a242fd1cafb1940788bcac2308b31fa53)
+
 ## 0.0.7
-- Merge in updates from [@edgycircle/ember-pikaday@2.2.3](https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2)
+- Merge in updates up through [@edgycircle/ember-pikaday@https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2](https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2)
 - Fix an issue with [pikaday-time](https://github.com/owenmead/Pikaday) vendor files not being imported into a parent app
 
 ## 0.0.6
@@ -8,7 +11,7 @@
 - Add stricter linting rules from [eslint-plugin-ember](https://github.com/ember-cli/eslint-plugin-ember)
 
 ## 0.0.5
-- Merge in updates from [@edgycircle/ember-pikaday@2.2.3](https://github.com/edgycircle/ember-pikaday/tree/acaa267ed7688c9b0cda1e462048c564480e61ef)
+- Merge in updates up through [@edgycircle/ember-pikaday@acaa267ed7688c9b0cda1e462048c564480e61ef](https://github.com/edgycircle/ember-pikaday/tree/acaa267ed7688c9b0cda1e462048c564480e61ef)
 - Update all dependencies
 - Add a note to the dummy app telling the user to open their console
 

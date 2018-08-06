@@ -1,10 +1,13 @@
-import { Promise } from 'rsvp';
 import { module } from 'qunit';
+import { resolve } from 'rsvp';
 import startApp from '../helpers/start-app';
 import destroyApp from '../helpers/destroy-app';
 
 export default function(name, options = {}) {
   module(name, {
+    _destroyApp() {
+      destroyApp(this.application);
+    },
     beforeEach() {
       this.application = startApp();
 
@@ -12,10 +15,9 @@ export default function(name, options = {}) {
         return options.beforeEach.apply(this, arguments);
       }
     },
-
     afterEach() {
       let afterEach = options.afterEach && options.afterEach.apply(this, arguments);
-      return Promise.resolve(afterEach).then(() => destroyApp(this.application)); // eslint-disable-line ember/named-functions-in-promises
+      return resolve(afterEach).then(this._destroyApp().bind(this));
     }
   });
 }

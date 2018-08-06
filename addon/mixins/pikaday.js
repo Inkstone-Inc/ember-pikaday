@@ -88,6 +88,9 @@ export default Mixin.create({
 	 */
   didUpdateAttrs() {
     run.later(() => {
+      // Do not set or update anything when the component is destroying.
+      if (get(this, 'isDestroying') || get(this, 'isDestroyed')) { return; }
+
       this.setMinDate();
       this.setMaxDate();
       this.setPikadayDate();
@@ -99,7 +102,7 @@ export default Mixin.create({
   },
 
   didRender() {
-    this._super(...arguments);
+    this._super();
     this.autoHideOnDisabled();
   },
 
@@ -115,7 +118,7 @@ export default Mixin.create({
   },
 
   willDestroyElement() {
-    this._super(...arguments);
+    this._super();
     get(this, 'pikaday').destroy();
   },
 
@@ -143,7 +146,7 @@ export default Mixin.create({
 
       // If the current date is lower than minDate we set date to minDate
       run.schedule('sync', () => {
-        if (value && moment(value).isBefore(minDate, 'day')) {
+        if (value && moment(value, get(this, 'format')).isBefore(minDate, 'day')) {
           pikaday.setDate(minDate);
         }
       });
