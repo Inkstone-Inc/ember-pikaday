@@ -1,5 +1,6 @@
 ## 0.0.8
 - Merge in updates up through [@edgycircle/ember-pikaday@e367b56a242fd1cafb1940788bcac2308b31fa53](https://github.com/edgycircle/ember-pikaday/tree/e367b56a242fd1cafb1940788bcac2308b31fa53)
+- Fix vulnerabilities reported in `npm audit` and Github's security alerts
 
 ## 0.0.7
 - Merge in updates up through [@edgycircle/ember-pikaday@https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2](https://github.com/edgycircle/ember-pikaday/tree/1376e7aa6fbf862811f14ca53c1e9869c414c7b2)
