@@ -11,7 +11,7 @@
     "start": "ember serve",
     "test": "ember try:each"
   },
-  "repository": "https://github.com/helm-inc/ember-pikaday-time",
+  "repository": "https://github.com/assemble-inc/ember-pikaday-time",
   "engines": {
     "node": ">= 6"
   },
